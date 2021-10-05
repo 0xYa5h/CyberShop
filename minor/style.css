@@ -59,6 +59,7 @@ p {
 .col2 img {
   max-width: 100%;
   padding: 50px 0;
+  float: right;
 }
 .col2 h1 {
   font-size: 50px;
@@ -249,6 +250,7 @@ small {
 }
 .app-logo img {
   width: 140px;
+  border-style: solid;
 }
 .footer hr {
   border: none;
