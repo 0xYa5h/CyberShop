@@ -1,7 +1,7 @@
 <?php      
     include('conn.php');  
     $username = $_POST['uname'];  
-    $password = $_POST['psw'];  
+    $password = $_POST['psw'];
       
         
       
@@ -11,12 +11,12 @@
         $count = mysqli_num_rows($result);  
          
         if($count >= 1){  
-            header("location: http://localhost/CyberShop/CyberShop/minor/index.html");
+            $_SESSION['uname'] = $username;
+            $_SESSION['success'] = "You have logged in!";
+            header("location: index");            
              
         }  
-        else{ 
-            echo "<h2> ". $count  ; 
-            echo "<h1> Login failed. Invalid username or password.</h1>";
-            
+        else{
+            echo "<h1> Login failed. Invalid username or password.</h1>";            
         }     
 ?>  
