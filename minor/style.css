@@ -111,9 +111,7 @@ p {
   min-width: 200px;
   margin-bottom: 50px;
   transition: transform 0.5s;
-  
 }
-
 
 .col4 img {
   width: 100%;
@@ -147,6 +145,15 @@ h4 {
 .col4 :hover {
   transform: translateY(-5px);
 }
+
+/* Forgot Password */
+.forgotPassword input {
+  border: 1px solid black;
+  margin-top: 40px;
+}
+.forgotPass-page {
+  background: radial-gradient(#fff, #808080);
+}
 /* Offers Section */
 .offers {
   background: radial-gradient(#fff, #808080);
@@ -156,7 +163,7 @@ h4 {
 .col2 .offer-img {
   padding: 50px;
 }
-.col2 p{
+.col2 p {
   font-style: italic;
 }
 small {
@@ -302,7 +309,6 @@ small {
   padding-left: 10px;
   font-size: 20px;
   margin-right: 10px;
-  
 }
 input:focus {
   outline: none;
