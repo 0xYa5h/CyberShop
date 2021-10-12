@@ -1,44 +1,44 @@
 <?php
-if($_POST['email'])
-{
-    include "conn.php";
-    $emailId = $_POST['email'];
-    $sql = "select * from userinfo where email = '$emailId'";
-    $result = mysqli_query($con, $sql); 
-    $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
+use PHPMailer\PHPMailer\PHPMailer;
 
-    if($row)
+if(isset($_POST['email'])){
+    $email = $_POST['email'];
+    $subject = "hello";
+    $body = "yoyo";
+
+    require_once "PHPMailer/PHPMailer.php";
+    require_once "PHPMailer/SMTP.php";
+    require_once "PHPMailer/Exception.php";
+
+    $mail = new PHPMailer();
+
+    //smtp settings
+    $mail->isSMTP();
+    $mail->Host = "smtp.gmail.com";
+    $mail->SMTPAuth = true;
+    $mail->Username = "kapoor003yash@gmail.com";
+    $mail->Password = 'YashKapoor987654321';
+    $mail->Port = 587;
+    $mail->SMTPSecure = "tls";
+
+    //email settings
+    $mail->isHTML(true);
+    $mail->setFrom($email);
+    $mail->addAddress("kapoor003yash@gmail.com");
+    $mail->Subject = ("$email ($subject)");
+    $mail->Body = $body;
+
+    if($mail->send()){
+        $status = "success";
+        $response = "Email is sent!";
+    }
+    else
     {
-        $otp = rand(100,999);
-        require_once('phpmail/PHPMailerAutoload.php');
-        $mail = new PHPMailer();
-        $mail->CharSet = 'UTF-8';
-        $mailIsSMTP();
-        $mail->SMTPAuth = true;
-        $mail->Username = "ctf.yash@gmail.com";
-        $mail->Password = "Rishu@123";
-        $mail->SMTPSecure = "ssl";
-        $mail->Host = "smtp.gmail.com";
-        $mail->Port = "465";
-        $mail->From='ctf.yash@gmail.com';
-        $mail->FromName='Admin CyberShop';
-        $mail->AddAddress('reciever_email_id', 'reciever_name');
-        $mail->Subject  =  'Reset Password';
-        $mail->IsHTML(true);
-        $mail->Body = "OTP for password reseting".$otp.'';
-        if($mail->Send())
-        {
-            echo "Check your Email for otp";
-        }
-        else{
-            echo "Mail Error - >".$mail->ErrorInfo;
-        }
-        
-    }
-    else{
-        echo "Invalid Email Address";
+        $status = "failed";
+        $response = "Something is wrong: <br>" . $mail->ErrorInfo;
     }
 
-
+    exit(json_encode(array("status" => $status, "response" => $response)));
 }
+
 ?>
