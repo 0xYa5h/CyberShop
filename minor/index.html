@@ -5,7 +5,7 @@
     <meta name="viewport" content="width = device-width, initial-scale = 1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CyberShop</title>
+    <title>Home-page</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,18 +19,16 @@
       href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
-    />
-    <link rel="stylesheet" href="all.min.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="header">
       <div class="container">
         <div class="navbar">
           <div class="logo">
-            <a href="index"><img src="images\logo.jpg" width="125px" border-style: solid /></a>
+            <a href="index"
+              ><img src="images\logo.jpg" width="125px" border-style: solid
+            /></a>
           </div>
           <div>
             <input
@@ -88,7 +86,21 @@
               <li><a href="login_registration">Account</a></li>
             </ul>
           </nav>
-          <a href="cart"><i class="fas fa-shopping-cart"></i></a>
+          <a href="cart"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+              /></svg
+          ></a>
           <img src="images\menu.png" class="menu-icon" onclick="menutoggle()" />
         </div>
         <div class="row">
@@ -98,7 +110,9 @@
               you Know...
             </h1>
             <p>
-              There are more hackers breeding every day, and more brilliant minds are turning into hackers. Security has advanced, but so have hackers.
+              There are more hackers breeding every day, and more brilliant
+              minds are turning into hackers. Security has advanced, but so have
+              hackers.
             </p>
             <a href="" class="btn">Explore Now &#8594;</a>
           </div>
@@ -130,46 +144,26 @@
       <div class="row">
         <div class="col4">
           <a href="product_details"><img src="images\p1.jpg" /></a>
-          <a href="product_details"></a><h4>HackRF One</h4></a>
-          <div class="rating">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
+          <a href="product_details"><h4>HackRF One</h4></a>
+          <div class="rating">&#11088; &#11088; &#11088; &#11088;</div>
           <p>$50.00</p>
         </div>
         <div class="col4">
-          <a href="product_details"> <img src="images\p02.jpg"  /></a>
+          <a href="product_details"> <img src="images\p02.jpg" /></a>
           <a href="product_details"> <h4>Raspberry Pi 4</h4></a>
-          <div class="rating">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
+          <div class="rating">&#11088; &#11088; &#11088; &#11088; &#11088;</div>
           <p>$50.00</p>
         </div>
         <div class="col4">
           <a href="product_details"><img src="images\p3.jpg" /></a>
           <a href="product_details"><h4>Wi-Fi Pineapple</h4></a>
-          <div class="rating">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
+          <div class="rating">&#11088; &#11088; &#11088; &#11088;</div>
           <p>$50.00</p>
         </div>
         <div class="col4">
           <a href="product_details"><img src="images\p4.jpg" /></a>
           <a href="product_details"><h4>LAN TURTLE</h4></a>
-          <div class="rating">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
+          <div class="rating">&#11088; &#11088; &#11088; &#11088;</div>
           <p>$50.00</p>
         </div>
       </div>
@@ -178,45 +172,25 @@
         <div class="col4">
           <a href="product_details"><img src="images\p5.jpg" /></a>
           <a href="product_details"><h4>I Heart Kali T-Shirt</h4></a>
-          <div class="rating">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
+          <div class="rating">&#11088; &#11088; &#11088; &#11088; &#11088;</div>
           <p>$50.00</p>
         </div>
         <div class="col4">
           <a href="product_details"><img src="images\p6.jpg" /></a>
           <a href="product_details"><h4>Rubber Ducky</h4></a>
-          <div class="rating flex">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
+          <div class="rating flex">&#11088; &#11088; &#11088; &#11088;</div>
           <p>$50.00</p>
         </div>
         <div class="col4">
           <a href="product_details"> <img src="images\p7.jpg" /></a>
-          <a href="product_details"><h4>Alfa AWUS036ACH Adapter </h4></a>
-          <div class="rating flex">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
+          <a href="product_details"><h4>Alfa AWUS036ACH Adapter</h4></a>
+          <div class="rating flex">&#11088; &#11088; &#11088; &#11088;</div>
           <p>$50.00</p>
         </div>
         <div class="col4">
-          <a href="product_details">  <img src="images\c1.jpg" /></a>
-          <a href="product_details">  <h4>D-Link Archer c6 router</h4></a>
-          <div class="rating">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
+          <a href="product_details"> <img src="images\c1.jpg" /></a>
+          <a href="product_details"> <h4>D-Link Archer c6 router</h4></a>
+          <div class="rating">&#11088; &#11088; &#11088; &#11088;</div>
           <p>$50.00</p>
         </div>
       </div>
@@ -224,45 +198,25 @@
         <div class="col4">
           <a href="product_details"><img src="images\p8.jpg" /></a>
           <a href="product_details"> <h4>D-Link Wi-Fi Range Extender</h4></a>
-          <div class="rating">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
+          <div class="rating">&#11088; &#11088; &#11088; &#11088;</div>
           <p>$50.00</p>
         </div>
         <div class="col4">
           <a href="product_details"><img src="images\c3.jpg" /></a>
           <a href="product_details"><h4>Atheros AR9271 USB WiFi Adapter</h4></a>
-          <div class="rating">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
+          <div class="rating">&#11088; &#11088; &#11088; &#11088;</div>
           <p>$50.00</p>
         </div>
         <div class="col4">
           <a href="product_details"><img src="images\p10.jpg" /></a>
           <a href="product_details"><h4>Arduino UNO R3 Board</h4></a>
-          <div class="rating">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
+          <div class="rating">&#11088; &#11088; &#11088; &#11088;</div>
           <p>$50.00</p>
         </div>
         <div class="col4">
           <a href="product_details"><img src="images\p12.jpg" /></a>
           <a href="product_details"><h4>Dlink CAT 6 Cable</h4></a>
-          <div class="rating">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
+          <div class="rating">&#11088; &#11088; &#11088; &#11088;</div>
           <p>$50.00</p>
         </div>
       </div>
@@ -292,53 +246,32 @@
       <div class="small-container">
         <div class="row">
           <div class="col3">
-            <i class="fa fa-quote-left"></i>
             <p>
               Lorem Ispum is simply dummy text of the printing and typesetting
               industry. Lorem Ispum has been the industry's standard dummy text
               ever.
             </p>
-            <div class="rating">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
+            <div class="rating">&#11088; &#11088; &#11088; &#11088;</div>
             <img src="images/user-1.png " />
             <h3>Sean Parker</h3>
           </div>
           <div class="col3">
-            <i class="fa fa-quote-left"></i>
             <p>
               Lorem Ispum is simply dummy text of the printing and typesetting
               industry. Lorem Ispum has been the industry's standard dummy text
               ever.
             </p>
-            <div class="rating">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
+            <div class="rating">&#11088; &#11088; &#11088; &#11088;</div>
             <img src="images/user-2.png" />
             <h3>Sean Parker</h3>
           </div>
           <div class="col3">
-            <i class="fa fa-quote-left"></i>
             <p>
               Lorem Ispum is simply dummy text of the printing and typesetting
               industry. Lorem Ispum has been the industry's standard dummy text
               ever.
             </p>
-            <div class="rating">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
+            <div class="rating">&#11088; &#11088; &#11088; &#11088;</div>
             <img src="images/user-3.png" />
             <h3>Sean Parker</h3>
           </div>
@@ -381,7 +314,7 @@
             </div>
           </div>
           <div class="footer-col2">
-            <img src="images\logo1.jpg"/>
+            <img src="images\logo1.jpg" />
             <!--
             <p>
               Our purpose is to Make The Benefits of Sports Accessible To Many

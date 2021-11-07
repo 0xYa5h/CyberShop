@@ -19,11 +19,6 @@
       href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
-    />
-    <link rel="stylesheet" href="all.min.css" />
   </head>
   <body>
     <div class="container">
@@ -87,7 +82,21 @@
             <li><a href="login_registration">Account</a></li>
           </ul>
         </nav>
-        <i class="fas fa-shopping-cart"></i>
+        <a href="cart"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+            /></svg
+        ></a>
         <img src="images\menu.png" class="menu-icon" onclick="menutoggle()" />
       </div>
     </div>
@@ -125,13 +134,15 @@
           </select>
           <input type="number" value="1" />
           <a href="" class="btn">Add To Cart</a>
-          <h3>Product Details <i class="fas fa-indent"></i></h3>
+          <h3>Product Details</h3>
           <br />
           <p>
-            This is the HackRF One, a Software Defined Radio (SDR) peripheral capable of transmission 
-            or reception of radio signals from 1MHz to 6GHz. Designed to enable test and development 
-            of modern and next generation radio technologies, HackRF One is an open source hardware 
-            platform that can be used as a USB peripheral or programmed for stand-alone operation.
+            This is the HackRF One, a Software Defined Radio (SDR) peripheral
+            capable of transmission or reception of radio signals from 1MHz to
+            6GHz. Designed to enable test and development of modern and next
+            generation radio technologies, HackRF One is an open source hardware
+            platform that can be used as a USB peripheral or programmed for
+            stand-alone operation.
           </p>
         </div>
       </div>
@@ -151,45 +162,25 @@
         <div class="col4">
           <img src="images\p3.jpg" />
           <h4>Wi-Fi Pineapple</h4>
-          <div class="rating">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
+          <div class="rating">&#11088; &#11088; &#11088; &#11088;</div>
           <p>$50.00</p>
         </div>
         <div class="col4">
           <img src="images\p4.jpg" />
           <h4>LAN TURTLE</h4>
-          <div class="rating">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
+          <div class="rating">&#11088; &#11088; &#11088; &#11088;</div>
           <p>$50.00</p>
         </div>
         <div class="col4">
           <img src="images\p10.jpg" />
           <h4>Arduino UNO R3 Board</h4>
-          <div class="rating">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
+          <div class="rating">&#11088; &#11088; &#11088; &#11088;</div>
           <p>$50.00</p>
         </div>
         <div class="col4">
           <img src="images\p7.jpg" />
           <h4>Alfa AWUS036ACH Adapter</h4>
-          <div class="rating">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
+          <div class="rating">&#11088; &#11088; &#11088; &#11088;</div>
           <p>$50.00</p>
         </div>
       </div>

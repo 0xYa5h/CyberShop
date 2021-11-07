@@ -5,7 +5,7 @@
     <meta name="viewport" content="width = device-width, initial-scale = 1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CyberShop</title>
+    <title>Forgot Password</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,15 +19,23 @@
       href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
       rel="stylesheet"
     />
-
   </head>
   <body>
-   
+    <style>
+      h1 {
+        padding-left: 100px;
+        font-size: 40px;
+      }
+    </style>
     <div class="container">
       <div class="navbar">
         <div class="logo">
-          <img src="images/logo1.jpg" width="125px" />
+          <p>
+            <img src="images\logo1.jpg" width="125px" />
+          </p>
         </div>
+        <img src="images\menu.png" class="menu-icon" onclick="menutoggle()" />
+        <h1>MY ACCOUNT</h1>
 
         <nav>
           <ul id="Menu-Items">
@@ -35,66 +43,33 @@
             <li><a href="products">Products</a></li>
             <li><a href="">About</a></li>
             <li><a href="">Contact</a></li>
-            <li><a href="">Account</a></li>
+            <li><a href="login_registration">Account</a></li>
           </ul>
         </nav>
-        <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
-              /></svg
-        <img src="images\menu.png" class="menu-icon" onclick="menutoggle()" />
- 
-        
-    
       </div>
     </div>
 
-    <!-- Login Registration Page -->
-    <div class="account-page">
-      <div class="container">
-        <div class="row">
-          <div class="col2">
-            <img src="images\cover3.jpg" width="100%" />
-          </div>
-          <div class="col2">
-            <div class="form-container">
-              <div class="form-btn">
-                <span onclick="login()">Login</span>
-                <span onclick="register()">Register</span>
-                <hr id="Indicator" />
-              </div>
-
-               <!-- Login -->
-                <form id="LoginForm" action="auth.php" method="post">
-                <input type="text" name="uname" required placeholder="Username" />
-                <input type="password" name="psw" required placeholder="Password" />
-                <button type="submit" class="btn">Login</button>
-                <a href="forgot_password">Forgot Password</a>
-              </form>
-
-               <!-- SignUp -->
-              <form id="RegForm" action="signAuth.php" method="post">
-                <input type="text" placeholder="Username" name="uname1" required/>
-                <input type="email" placeholder="Email" name="email" required/>
-                <input type="password" placeholder="Password" name="psw1" required/>
-                <input type="password" placeholder="Confirm Password" name="cpsw1" required/>
-                <button type="submit" class="btn">Register</button>
-              </form>
-            </div>
-          </div>
-        </div>
+    <!-- Forgot Password Section -->
+    <div class="profile-section">
+      <div class="`profile-pic">
+        <img src="images\user-3.png" />
+        <input type="file" id="file" />
+        <label for="file" id="uploadBtn">Choose Photo</label>
       </div>
+      <form>
+        <input type="email" placeholder="Email" />
+        <input type="password" placeholder="Password" />
+      </form>
+      <form>
+        <input type="text" placeholder="First Name" />
+        <input type="text" placeholder="Last Name" />
+        <input type="text" placeholder="Email" />
+        <input type="text" placeholder="First Name" />
+        <input type="text" placeholder="First Name" />
+        <input type="text" placeholder="First Name" />
+        <input type="text" placeholder="First Name" />
+      </form>
     </div>
- 
     <!-- Footer section -->
     <div class="footer">
       <div class="container">
@@ -160,23 +135,6 @@
       }
     </script>
 
-    <!-- Js for Toggle Registration Form -->
-    <script>
-      var loginForm = document.getElementById("LoginForm");
-      var registrationForm = document.getElementById("RegForm");
-      var Indicator = document.getElementById("Indicator");
-
-      function register() {
-        registrationForm.style.transform = "translateX(0px)";
-        loginForm.style.transform = "translateX(0px)";
-        Indicator.style.transform = "translateX(100px)";
-      }
-
-      function login() {
-        registrationForm.style.transform = "translateX(300px)";
-        loginForm.style.transform = "translateX(300px)";
-        Indicator.style.transform = "translateX(0px)";
-      }
-    </script>
+    <!-- Js for Product Gallery -->
   </body>
 </html>

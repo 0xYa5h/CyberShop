@@ -5,7 +5,7 @@
     <meta name="viewport" content="width = device-width, initial-scale = 1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cart Page</title>
+    <title>OTP-page</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,105 +19,29 @@
       href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
-    />
-    <link rel="stylesheet" href="all.min.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="navbar">
-        <div class="logo">
-          <img src="images\logo1.jpg" width="125px" />
+    <div class="header">
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <img src="images\logo1.jpg" width="125px" />
+          </div>
+          <img src="images\menu.png" class="menu-icon" onclick="menutoggle()" />
         </div>
+      </div>
 
-        <nav>
-          <ul id="Menu-Items">
-            <li><a href="index">Home</a></li>
-            <li><a href="products">Products</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Contact</a></li>
-            <li><a href="login_registration">Account</a></li>
-          </ul>
-        </nav>
-        <i class="fas fa-shopping-cart"></i>
-        <img src="images\menu.png" class="menu-icon" onclick="menutoggle()" />
+      <!-- Page Not Found  -->
+
+      <div id="error-page">
+        <div class="content">
+          <b> <h1>ERROR 404</h1></b>
+          <b><h4 data-text="Opps! Page not found">Opps! Page not found</h4></b>
+          <a class="btn" href="index.html">Return to Home</a>
+        </div>
       </div>
     </div>
 
-    <!-- Cart Item Details -->
-    <div class="small-container cart-page">
-      <table class="table" style="width: 100%">
-        <tr>
-          <th>Product</th>
-          <th>Quantity</th>
-          <th>Subtotal</th>
-        </tr>
-        <tr>
-          <td>
-            <div class="cart-info">
-              <img src="images\buy-1.jpg" />
-              <div>
-                <p>Red Printed T-Shirt</p>
-                <small>Price: $50.00</small>
-                <br />
-                <a>Remove</a>
-              </div>
-            </div>
-          </td>
-          <td><input type="number" value="1" /></td>
-          <td>$100.00</td>
-        </tr>
-        <tr>
-          <td>
-            <div class="cart-info">
-              <img src="images\buy-2.jpg" />
-              <div>
-                <p>Red Printed T-Shirt</p>
-                <small>Price: $50.00</small>
-                <br />
-                <a>Remove</a>
-              </div>
-            </div>
-          </td>
-          <td><input type="number" value="1" /></td>
-          <td>$100.00</td>
-        </tr>
-        <tr>
-          <td>
-            <div class="cart-info">
-              <img src="images\buy-3.jpg" />
-              <div>
-                <p>Red Printed T-Shirt</p>
-                <small>Price: $50.00</small>
-                <br />
-                <a>Remove</a>
-              </div>
-            </div>
-          </td>
-          <td><input type="number" value="1" /></td>
-          <td>$100.00</td>
-        </tr>
-      </table>
-
-      <div class="total-price">
-        <table>
-          <tr>
-            <td>Subtotal</td>
-            <td>$200.00</td>
-          </tr>
-          <tr>
-            <td>Tax</td>
-            <td>$30.00</td>
-          </tr>
-          <tr>
-            <td>Total</td>
-            <td>$230.00</td>
-          </tr>
-        </table>
-      </div>
-    </div>
     <!-- Footer section -->
     <div class="footer">
       <div class="container">
