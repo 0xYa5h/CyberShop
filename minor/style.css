@@ -146,12 +146,12 @@ h4 {
   transform: translateY(-5px);
 }
 
-/* Forgot Password */
-.forgotPassword input {
-  border: 1px solid black;
-  margin-top: 40px;
-}
 .forgotPass-page {
+  background: radial-gradient(#fff, #808080);
+}
+
+/* Password Reset Section */
+.password_reset-page {
   background: radial-gradient(#fff, #808080);
 }
 
@@ -192,6 +192,27 @@ html {
   text-align: center;
 }
 
+/* Error Page */
+.content h1 {
+  margin: 0;
+  font-size: 90px;
+  text-align: center;
+  padding-bottom: 0px;
+}
+
+.content h4 {
+  font-size: 45px;
+  text-align: center;
+  padding-bottom: 60px;
+}
+.content .btn {
+  margin: 0;
+  position: relative;
+  top: 20%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
 /* Offers Section */
 .offers {
   background: radial-gradient(#fff, #808080);
@@ -560,6 +581,13 @@ form a {
   transform: translateX(100px);
   transition: transform 1s;
 }
+
+/* Password Rest Section */
+.password_reset-page h2 {
+  font-size: 30px;
+  text-align: center;
+}
+
 /* Media Query for less than 600 screen size */
 @media only screen and (max-width: 800px) {
   .row {
