@@ -19,59 +19,154 @@
       href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
       rel="stylesheet"
     />
-  </head>
-  <body>
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css
+"
+      rel="stylesheet"
+      integrity="
+      sha384-wvfXpqpZzVQGK6TAH5PVIGO FQNHSOD2xbE+QkPXCAFINEEVOEH31esibVCOQVnN"
+      crossorigin="
+      anonymous"
+    />
     <style>
-      h1 {
-        padding-left: 100px;
+      * {
+        box-sizing: border-box;
+      }
+
+      /* Create two unequal columns that floats next to each other */
+      .column {
+        float: left;
+        padding: 10px;
+        height: 600px;
+        /* Should be removed. Only for demonstration */
+      }
+
+      .left {
+        width: 20%;
+        background-color: #989898;
+      }
+      .profile-pic {
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 1px solid grey;
+      }
+      #uploadBtn {
+        padding-left: 50px;
+      }
+
+      #uploadBtn {
+        color: black;
+        line-height: 30px;
+        font-family: sans-serif;
+        font-size: 15px;
+        cursor: pointer;
+      }
+      .form {
+        padding-left: 300px;
+        width: 800px;
+      }
+
+      .right {
+        width: 80%;
+        background-color: #dcdcdc;
+      }
+
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      .navbar {
+        background-color: white;
+      }
+      .navbar h1 {
+        padding-left: 300px;
         font-size: 40px;
       }
+      .account-section h1 {
+        padding-left: 10px;
+        font-size: 20px;
+      }
     </style>
-    <div class="container">
-      <div class="navbar">
-        <div class="logo">
-          <p>
-            <img src="images\logo1.jpg" width="125px" />
-          </p>
-        </div>
-        <img src="images\menu.png" class="menu-icon" onclick="menutoggle()" />
-        <h1>MY ACCOUNT</h1>
-
-        <nav>
-          <ul id="Menu-Items">
-            <li><a href="index">Home</a></li>
-            <li><a href="products">Products</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Contact</a></li>
-            <li><a href="login_registration">Account</a></li>
-          </ul>
-        </nav>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="logo">
+        <a href="index"
+          ><img src="images\logo.jpg" width="125px" border-style: solid
+        /></a>
       </div>
+      <h1><b>MY ACCOUNT</b></h1>
+
+      <nav>
+        <ul id="Menu-Items">
+          <li><a href="index">Home</a></li>
+          <li><a href="products">Products</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Contact</a></li>
+          <li><a href="login_registration">Account</a></li>
+        </ul>
+      </nav>
+      <a href="cart"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+          /></svg
+      ></a>
+      <img src="images\menu.png" class="menu-icon" onclick="menutoggle()" />
     </div>
 
-    <!-- Forgot Password Section -->
-    <div class="profile-section">
-      <div class="`profile-pic">
-        <img src="images\user-3.png" />
+    <div class="account-section">
+      <div class="column left">
+        <img class="profile-pic" src="images\user-3.png" id="photo" />
         <input type="file" id="file" />
         <label for="file" id="uploadBtn">Choose Photo</label>
+        <br />
+        <br />
+
+        <h1><b>Rishank Mehrotra</b></h1>
+        <h1><b>9628775771</b></h1>
       </div>
-      <form>
-        <input type="email" placeholder="Email" />
-        <input type="password" placeholder="Password" />
-      </form>
-      <form>
-        <input type="text" placeholder="First Name" />
-        <input type="text" placeholder="Last Name" />
-        <input type="text" placeholder="Email" />
-        <input type="text" placeholder="First Name" />
-        <input type="text" placeholder="First Name" />
-        <input type="text" placeholder="First Name" />
-        <input type="text" placeholder="First Name" />
-      </form>
+
+      <div class="column right">
+        <form class="form">
+          <br />
+
+          <input type="text" name="fname" required placeholder="First Name" />
+          <input type="text" name="lname" required placeholder="Last Name" />
+          <br />
+          <br />
+          <input type="text" name="email" required placeholder="Email" />
+          <br />
+          <br />
+          <input type="text" name="contact" required placeholder="Contact" />
+          <br />
+          <br />
+          <textarea rows="3" cols="65" placeholder="Street"></textarea>
+          <input type="text" name="address" required placeholder="City" />
+          <input type="text" name="address" required placeholder="State" />
+          <input type="text" name="address" required placeholder="Pin Code" />
+        </form>
+      </div>
     </div>
+
+    <script src="app.js"></script>
+
     <!-- Footer section -->
-    <div class="footer">
+    <!-- <div class="footer">
       <div class="container">
         <div class="row">
           <div class="footer-col-1">
@@ -84,10 +179,10 @@
           </div>
           <div class="footer-col2">
             <img src="images\logo1.jpg" />
-            <!--
+
             <p>
               Our purpose is to Make The Benefits of Sports Accessible To Many
-            </p> -->
+            </p>
           </div>
           <div class="footer-col3">
             <h3>Useful Links</h3>
@@ -123,9 +218,10 @@
         <hr />
         <p class="copyright">Copyright 2021 CyberShop</p>
       </div>
-    </div>
+    </div> -->
+
     <!-- Js for toggle menu -->
-    <script>
+    <!-- <script>
       var MenuItems = document.getElementById("Menu-Items");
       MenuItems.style.maxHeight = "0px";
       function menutoggle() {
@@ -133,7 +229,7 @@
           MenuItems.style.maxHeight = "200px";
         else MenuItems.style.maxHeight = "0px";
       }
-    </script>
+    </script> -->
 
     <!-- Js for Product Gallery -->
   </body>
