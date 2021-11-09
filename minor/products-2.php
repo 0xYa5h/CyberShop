@@ -1,3 +1,9 @@
+<?php
+include("all_pro2.php");
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -76,13 +82,13 @@
         <nav>
           <ul id="Menu-Items">
             <li><a href="index">Home</a></li>
-            <li><a href="products">Products</a></li>
+            <li><a href="products-1">Products</a></li>
             <li><a href="">About</a></li>
             <li><a href="">Contact</a></li>
             <li><a href="login_registration">Account</a></li>
           </ul>
         </nav>
-        <a href="cart"
+        <a href="cart.html"
           ><svg
             xmlns="http://www.w3.org/2000/svg"
             class="h-6 w-6"
@@ -103,67 +109,17 @@
 
     <div class="small-container">
       <div class="row row-2">
-        <h2>All Products</h2>
-        <select>
-          <option>Sort by Price</option>
-          <option>Sort by Rating</option>
-        </select>
+        <h2>All Products</h2>        
       </div>
-      <div class="row">
-        <div class="col4">
-          <img src="images\p1.jpg" />
-          <h4>HackRF One</h4>
-          <div class="rating">&#11088; &#11088; &#11088; &#11088;</div>
-          <p>$50.00</p>
-        </div>
-        <div class="col4">
-          <img src="images\p10.jpg" />
-          <h4>Arduino UNO R3 Board</h4>
-          <div class="rating">&#11088; &#11088; &#11088; &#11088;</div>
-          <p>$50.00</p>
-        </div>
-        <div class="col4">
-          <img src="images\p3.jpg" />
-          <h4>Wi-Fi Pineapple</h4>
-          <div class="rating">&#11088; &#11088; &#11088; &#11088;</div>
-          <p>$50.00</p>
-        </div>
-        <div class="col4">
-          <img src="images\p4.jpg" />
-          <h4>Lan Turtle</h4>
-          <div class="rating">&#11088; &#11088; &#11088; &#11088;</div>
-          <p>$50.00</p>
-        </div>
-        <div class="col4">
-          <img src="images\p5.jpg" />
-          <h4>I Heart Kali TShirt</h4>
-          <div class="rating">&#11088; &#11088; &#11088; &#11088;</div>
-          <p>$50.00</p>
-        </div>
-        <div class="col4">
-          <img src="images\p6.jpg" />
-          <h4>Rubber Ducky</h4>
-          <div class="rating">&#11088; &#11088; &#11088; &#11088;</div>
-          <p>$50.00</p>
-        </div>
-        <div class="col4">
-          <img src="images\p7.jpg" />
-          <h4>Alfa AWUS036ACH Adapter</h4>
-          <div class="rating">&#11088; &#11088; &#11088; &#11088;</div>
-          <p>$50.00</p>
-        </div>
-        <div class="col4">
-          <img src="images\c1.jpg" />
-          <h4>D-Link Archer c6 router</h4>
-          <div class="rating">&#11088; &#11088; &#11088; &#11088;</div>
-          <p>$50.00</p>
-        </div>
-      </div>
+
+    <?php
+      getPro();
+    ?>
+      
       <div class="page-btn">
-        <span>1</span>
-        <span>2</span>
-        <span>3</span>
-        <span>&#8594;</span>
+      <a href='products-1' class="page-btn"><strong>1</strong>, </a>
+         <a href='products-2' class="page-btn"><strong>2</strong></a>
+        <!--<span>&#8594;</span> -->
       </div>
     </div>
 

@@ -1,3 +1,8 @@
+<?php
+include("conn.php");
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -73,46 +78,16 @@ anonymous"
                   required=""
                 />
               </div>
+                           
               <div class="form-group">
-                <label class="col md-3 control-label"> Product Category </label>
-                <select name="product_cat" class="form-control">
-                  <option>Select a product category</option>
-                  <!--Data Base code to be written here  -->
-                </select>
-              </div>
-              <div class="form-group">
-                <label class="col md-3 control-label"> Categories</label>
-                <select name="cat" class="form-control">
-                  <option>Select Categories</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label class="col md-3 control-label"> Product Image 1 </label>
+                <label class="col md-3 control-label"> Product Image  </label>
                 <input
                   type="file"
-                  name="product_img1"
+                  name="product_img"
                   class="form-control"
                   required=""
                 />
-              </div>
-              <div class="form-group">
-                <label class="col md-3 control-label"> Product Image 2 </label>
-                <input
-                  type="file"
-                  name="product_img2"
-                  class="form-control"
-                  required=""
-                />
-              </div>
-              <div class="form-group">
-                <label class="col md-3 control-label"> Product Image 3 </label>
-                <input
-                  type="file"
-                  name="product_img3"
-                  class="form-control"
-                  required=""
-                />
-              </div>
+              
               <div class="form-group">
                 <label class="col md-3 control-label"> Product Price </label>
                 <input
@@ -122,15 +97,7 @@ anonymous"
                   required=""
                 />
               </div>
-              <div class="form-group">
-                <label class="col md-3 control-label"> Product Keyword </label>
-                <input
-                  type="text"
-                  name="product_keyword"
-                  class="form-control"
-                  required=""
-                />
-              </div>
+             
               <div class="form-group">
                 <label class="col md-3 control-label">
                   Product Description
@@ -141,8 +108,11 @@ anonymous"
                   rows="6"
                   cols="19"
                 ></textarea>
-                <button>Insert Product</button>
               </div>
+              <div class="form-group">
+                <input type="submit" name="submit" value="Insert Product" 
+                 class = "btn btn-primary form-control">
+              </div>  
             </form>
           </div>
         </div>
@@ -153,3 +123,30 @@ anonymous"
     <!-- breadcrumb row end-->
   </body>
 </html>
+
+<?php
+
+if (isset($_POST['submit'])){
+  $product_title=$_POST['product_title'];
+  $product_price=$_POST['product_price'];
+  $product_desc=$_POST['product_desc'];
+
+  $product_img=$_FILES['product_img']['name'];
+  $tmp_name=$_FILES['product_img']['tmp_name'];
+
+  move_uploaded_file($tmp_name,"product_images/$product_img");
+
+  $insrt_product="insert into products(date,pro_title,pro_img,pro_price,pro_detail) values( NOW() ,'$product_title','$product_img','$product_price','$product_desc')";
+
+  $run_product=mysqli_query($con,$insrt_product);
+  if($run_product){
+    echo " <script>alert('Product Inserted Successfully')</script>";
+    echo "<script>window.open('insert_product.php')</script>";
+  }
+  else{
+    echo "<script>alert('error')</script>";
+  }
+
+}
+
+?>

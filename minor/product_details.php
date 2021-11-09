@@ -1,3 +1,8 @@
+<?php
+include("pro_func.php");
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -76,13 +81,13 @@
         <nav>
           <ul id="Menu-Items">
             <li><a href="index">Home</a></li>
-            <li><a href="products">Products</a></li>
+            <li><a href="products-1">Products</a></li>
             <li><a href="">About</a></li>
             <li><a href="">Contact</a></li>
-            <li><a href="login_registration">Account</a></li>
+            <li><a href="account_page.html">Account</a></li>
           </ul>
         </nav>
-        <a href="cart"
+        <a href="cart.html"
           ><svg
             xmlns="http://www.w3.org/2000/svg"
             class="h-6 w-6"
@@ -101,52 +106,9 @@
       </div>
     </div>
 
-    <!-- Single Product Details -->
-    <div class="small-container single-product">
-      <div class="row">
-        <div class="col2">
-          <img src="images\p1.jpg" width="100%" id="productImg" />
-          <div class="small-img-row">
-            <div class="small-img-col">
-              <img src="images\gallery-1.jpg" width="100%" class="small-img" />
-            </div>
-            <div class="small-img-col">
-              <img src="images\gallery-2.jpg" width="100%" class="small-img" />
-            </div>
-            <div class="small-img-col">
-              <img src="images\gallery-3.jpg" width="100%" class="small-img" />
-            </div>
-            <div class="small-img-col">
-              <img src="images\gallery-4.jpg" width="100%" class="small-img" />
-            </div>
-          </div>
-        </div>
-
-        <div class="col2">
-          <p>Home / Gadget</p>
-          <h1>HackRF One</h1>
-          <h4>$ 50.00</h4>
-          <select>
-            <option>Select Item</option>
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-          </select>
-          <input type="number" value="1" />
-          <a href="" class="btn">Add To Cart</a>
-          <h3>Product Details</h3>
-          <br />
-          <p>
-            This is the HackRF One, a Software Defined Radio (SDR) peripheral
-            capable of transmission or reception of radio signals from 1MHz to
-            6GHz. Designed to enable test and development of modern and next
-            generation radio technologies, HackRF One is an open source hardware
-            platform that can be used as a USB peripheral or programmed for
-            stand-alone operation.
-          </p>
-        </div>
-      </div>
-    </div>
+    <?php
+    getPro();
+    ?>
 
     <!-- Title -->
     <div class="small-container">

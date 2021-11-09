@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -32,10 +33,10 @@
         <nav>
           <ul id="Menu-Items">
             <li><a href="index">Home</a></li>
-            <li><a href="products">Products</a></li>
+            <li><a href="products-1">Products</a></li>
             <li><a href="">About</a></li>
             <li><a href="">Contact</a></li>
-            <li><a href="">Account</a></li>
+            <li><a href="account_page.html">Account</a></li>
           </ul>
         </nav>
         <svg

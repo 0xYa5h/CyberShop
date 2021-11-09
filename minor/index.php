@@ -1,3 +1,7 @@
+<?php
+include("functions.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -80,13 +84,13 @@
           <nav>
             <ul id="Menu-Items">
               <li><a href="index">Home</a></li>
-              <li><a href="products">Products</a></li>
+              <li><a href="products-1">Products</a></li>
               <li><a href="">About</a></li>
               <li><a href="">Contact</a></li>
               <li><a href="login_registration">Account</a></li>
             </ul>
           </nav>
-          <a href="cart"
+          <a href="cart.html"
             ><svg
               xmlns="http://www.w3.org/2000/svg"
               class="h-6 w-6"
@@ -138,89 +142,11 @@
         </div>
       </div>
     </div>
-    <! ---featured products  --->
-    <div class="small-container">
-      <h2 class="title">Featured Products</h2>
-      <div class="row">
-        <div class="col4">
-          <a href="product_details"><img src="images\p1.jpg" /></a>
-          <a href="product_details"><h4>HackRF One</h4></a>
-          <div class="rating">&#11088; &#11088; &#11088; &#11088;</div>
-          <p>$50.00</p>
-        </div>
-        <div class="col4">
-          <a href="product_details"> <img src="images\p02.jpg" /></a>
-          <a href="product_details"> <h4>Raspberry Pi 4</h4></a>
-          <div class="rating">&#11088; &#11088; &#11088; &#11088; &#11088;</div>
-          <p>$50.00</p>
-        </div>
-        <div class="col4">
-          <a href="product_details"><img src="images\p3.jpg" /></a>
-          <a href="product_details"><h4>Wi-Fi Pineapple</h4></a>
-          <div class="rating">&#11088; &#11088; &#11088; &#11088;</div>
-          <p>$50.00</p>
-        </div>
-        <div class="col4">
-          <a href="product_details"><img src="images\p4.jpg" /></a>
-          <a href="product_details"><h4>LAN TURTLE</h4></a>
-          <div class="rating">&#11088; &#11088; &#11088; &#11088;</div>
-          <p>$50.00</p>
-        </div>
-      </div>
-      <h2 class="title">Latest Products</h2>
-      <div class="row">
-        <div class="col4">
-          <a href="product_details"><img src="images\p5.jpg" /></a>
-          <a href="product_details"><h4>I Heart Kali T-Shirt</h4></a>
-          <div class="rating">&#11088; &#11088; &#11088; &#11088; &#11088;</div>
-          <p>$50.00</p>
-        </div>
-        <div class="col4">
-          <a href="product_details"><img src="images\p6.jpg" /></a>
-          <a href="product_details"><h4>Rubber Ducky</h4></a>
-          <div class="rating flex">&#11088; &#11088; &#11088; &#11088;</div>
-          <p>$50.00</p>
-        </div>
-        <div class="col4">
-          <a href="product_details"> <img src="images\p7.jpg" /></a>
-          <a href="product_details"><h4>Alfa AWUS036ACH Adapter</h4></a>
-          <div class="rating flex">&#11088; &#11088; &#11088; &#11088;</div>
-          <p>$50.00</p>
-        </div>
-        <div class="col4">
-          <a href="product_details"> <img src="images\c1.jpg" /></a>
-          <a href="product_details"> <h4>D-Link Archer c6 router</h4></a>
-          <div class="rating">&#11088; &#11088; &#11088; &#11088;</div>
-          <p>$50.00</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col4">
-          <a href="product_details"><img src="images\p8.jpg" /></a>
-          <a href="product_details"> <h4>D-Link Wi-Fi Range Extender</h4></a>
-          <div class="rating">&#11088; &#11088; &#11088; &#11088;</div>
-          <p>$50.00</p>
-        </div>
-        <div class="col4">
-          <a href="product_details"><img src="images\c3.jpg" /></a>
-          <a href="product_details"><h4>Atheros AR9271 USB WiFi Adapter</h4></a>
-          <div class="rating">&#11088; &#11088; &#11088; &#11088;</div>
-          <p>$50.00</p>
-        </div>
-        <div class="col4">
-          <a href="product_details"><img src="images\p10.jpg" /></a>
-          <a href="product_details"><h4>Arduino UNO R3 Board</h4></a>
-          <div class="rating">&#11088; &#11088; &#11088; &#11088;</div>
-          <p>$50.00</p>
-        </div>
-        <div class="col4">
-          <a href="product_details"><img src="images\p12.jpg" /></a>
-          <a href="product_details"><h4>Dlink CAT 6 Cable</h4></a>
-          <div class="rating">&#11088; &#11088; &#11088; &#11088;</div>
-          <p>$50.00</p>
-        </div>
-      </div>
-    </div>
+
+    <?php
+    getPro();
+    ?>
+
     <!--- Offer-->
     <div class="offers">
       <div class="small-container">
