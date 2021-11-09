@@ -25,8 +25,25 @@
     />
     <link rel="stylesheet" href="all.min.css" />
     <style>
-      .button {
-        float: right;
+      .circle-check {
+        padding-left: 600px;
+      }
+      h1 {
+        font-size: 40px;
+        font-family: "Times New Roman", Times, serif;
+        color: green;
+        text-align: center;
+      }
+      h2 {
+        font-size: 30px;
+        font-family: "Times New Roman", Times, serif;
+        text-align: center;
+      }
+      #check {
+        color: green;
+      }
+      .shop-more {
+        text-align: center;
       }
     </style>
   </head>
@@ -52,81 +69,16 @@
     </div>
 
     <!-- Cart Item Details -->
-    <div class="small-container cart-page">
-      <table class="table" style="width: 100%">
-        <tr>
-          <th>Product</th>
-          <th>Quantity</th>
-          <th>Subtotal</th>
-        </tr>
-        <tr>
-          <td>
-            <div class="cart-info">
-              <img src="images\buy-1.jpg" />
-              <div>
-                <p>Red Printed T-Shirt</p>
-                <small>Price: $50.00</small>
-                <br />
-                <a>Remove</a>
-              </div>
-            </div>
-          </td>
-          <td><input type="number" value="1" /></td>
-          <td>$100.00</td>
-        </tr>
-        <tr>
-          <td>
-            <div class="cart-info">
-              <img src="images\buy-2.jpg" />
-              <div>
-                <p>Red Printed T-Shirt</p>
-                <small>Price: $50.00</small>
-                <br />
-                <a>Remove</a>
-              </div>
-            </div>
-          </td>
-          <td><input type="number" value="1" /></td>
-          <td>$100.00</td>
-        </tr>
-        <tr>
-          <td>
-            <div class="cart-info">
-              <img src="images\buy-3.jpg" />
-              <div>
-                <p>Red Printed T-Shirt</p>
-                <small>Price: $50.00</small>
-                <br />
-                <a>Remove</a>
-              </div>
-            </div>
-          </td>
-          <td><input type="number" value="1" /></td>
-          <td>$100.00</td>
-        </tr>
-      </table>
+    <div class="circle-check">
+      <i class="fas fa-check-circle fa-10x" id="check"></i>
+    </div>
+    <h1>Congratulations !</h1>
+    <h2>Your order has been placed Successfully</h2>
 
-      <div class="total-price">
-        <table>
-          <tr>
-            <td>Subtotal</td>
-            <td>$200.00</td>
-          </tr>
-          <tr>
-            <td>Tax</td>
-            <td>$30.00</td>
-          </tr>
-          <tr>
-            <td>Total</td>
-            <td>$230.00</td>
-          </tr>
-        </table>
-      </div>
-      <div class="button">
-        <a href="order.html"
-          ><button type="submit" class="btn">Place Order</button></a
-        >
-      </div>
+    <div class="shop-more">
+      <a href="products.html"
+        ><button type="submit" class="btn">Shop More</button></a
+      >
     </div>
     <!-- Footer section -->
     <div class="footer">
