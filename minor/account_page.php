@@ -1,3 +1,8 @@
+<?php
+include('acc_func.php');
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -108,7 +113,7 @@
           <li><a href="products">Products</a></li>
           <li><a href="">About</a></li>
           <li><a href="">Contact</a></li>
-          <li><a href="login_registration">Account</a></li>
+          <li><a href="account_page?u_id=3">Account</a></li>
         </ul>
       </nav>
       <a href="cart"
@@ -129,39 +134,13 @@
       <img src="images\menu.png" class="menu-icon" onclick="menutoggle()" />
     </div>
 
-    <div class="account-section">
-      <div class="column left">
-        <img class="profile-pic" src="images\user-3.png" id="photo" />
-        <input type="file" id="file" />
-        <label for="file" id="uploadBtn">Choose Photo</label>
-        <br />
-        <br />
+    
 
-        <h1><b>Rishank Mehrotra</b></h1>
-        <h1><b>9628775771</b></h1>
-      </div>
+      <?php
+      getUser();
+      ?>
 
-      <div class="column right">
-        <form class="form">
-          <br />
-
-          <input type="text" name="fname" required placeholder="First Name" />
-          <input type="text" name="lname" required placeholder="Last Name" />
-          <br />
-          <br />
-          <input type="text" name="email" required placeholder="Email" />
-          <br />
-          <br />
-          <input type="text" name="contact" required placeholder="Contact" />
-          <br />
-          <br />
-          <textarea rows="3" cols="65" placeholder="Street"></textarea>
-          <input type="text" name="address" required placeholder="City" />
-          <input type="text" name="address" required placeholder="State" />
-          <input type="text" name="address" required placeholder="Pin Code" />
-        </form>
-      </div>
-    </div>
+      
 
     <script src="app.js"></script>
 

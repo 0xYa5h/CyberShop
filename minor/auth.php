@@ -5,18 +5,29 @@
       
         
       
-        $sql = "select * from userinfo where username = '$username' and password = '$password'";  
+        $sql = "select * from users where username = '$username' and password = '$password'";  
         $result = mysqli_query($con, $sql);  
         $row = mysqli_fetch_array($result, MYSQLI_ASSOC);  
         $count = mysqli_num_rows($result);  
          
         if($count >= 1){  
-            $_SESSION['uname'] = $username;
-            $_SESSION['success'] = "You have logged in!";
-            header("location: index");            
+            if($username=='admin'){
+                echo "<script>alert('You have logged in as $username')</script>";
+                echo "<script>window.open('insert_product','_self')</script>" ;
+            }
+            else{
+                $_SESSION['uname'] = $username;
+                echo "<script>alert('You have logged in as $username')</script>";
+                echo "<script>window.open('index','_self')</script>" ; 
+            }
+                           
              
         }  
         else{
-            echo "<h1> Login failed. Invalid username or password.</h1>";            
-        }     
+            echo "<script>alert('Login failed. Invalid username or password.')</script>";
+            echo "<script>window.open('login_registration','_self')</script>" ;           
+        }
+
+    
+
 ?>  

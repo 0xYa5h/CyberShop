@@ -7,16 +7,17 @@
 
 
     if($password == $cpassword){
-        $sql = "select * from userinfo where username = '$username' and password = '$password'"; 
-        $sql = "INSERT INTO `userinfo` (`username`, `password`, `email`) VALUES ('$username', '$password', '$email')"; 
+        #$sql = "select * from users where username = '$username' and password = '$password'"; 
+        $sql = "INSERT INTO `users`( `username`, `password`, `email`) 
+                VALUES ('$username','$password','$email')"; 
         $result = mysqli_query($con, $sql);  
         $_SESSION['username'] = $username;
-  	    $_SESSION['success'] = "You are now Sign in";
-        header("location: http://localhost/CyberShop/CyberShop/minor/index.html");
+        echo "<script>alert('$username successfully created')</script>";
+        echo "<script>window.open('login_registration')</script>";
     }
     else{
-        echo "<h2> Registration failed!! Password does not match!!!</h2>";
-        header("location: http://localhost/CyberShop/CyberShop/minor/login_registration.html");
+        echo "<script>alert('Registration failed!! Password does not match!!!')</script>";
+        echo "<script>window.open('login_registration')</script>";
     }     
         
       

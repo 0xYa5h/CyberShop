@@ -84,7 +84,7 @@ include("pro_func.php");
             <li><a href="products-1">Products</a></li>
             <li><a href="">About</a></li>
             <li><a href="">Contact</a></li>
-            <li><a href="account_page.html">Account</a></li>
+            <li><a href="account_page?u_id=3">Account</a></li>
           </ul>
         </nav>
         <a href="cart.html"
@@ -105,6 +105,9 @@ include("pro_func.php");
         <img src="images\menu.png" class="menu-icon" onclick="menutoggle()" />
       </div>
     </div>
+    <?php
+    addCart();
+    ?>
 
     <?php
     getPro();

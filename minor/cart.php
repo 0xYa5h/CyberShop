@@ -40,10 +40,9 @@
         <nav>
           <ul id="Menu-Items">
             <li><a href="index">Home</a></li>
-            <li><a href="products">Products</a></li>
-            <li><a href="">About</a></li>
+            <li><a href="products-1">Products</a></li>
             <li><a href="">Contact</a></li>
-            <li><a href="login_registration">Account</a></li>
+            <li><a href="account_page?u_id=3">Account</a></li>
           </ul>
         </nav>
         <i class="fas fa-shopping-cart"></i>
