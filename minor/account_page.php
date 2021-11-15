@@ -24,15 +24,7 @@ include('acc_func.php');
       href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
       rel="stylesheet"
     />
-    <link
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css
-"
-      rel="stylesheet"
-      integrity="
-      sha384-wvfXpqpZzVQGK6TAH5PVIGO FQNHSOD2xbE+QkPXCAFINEEVOEH31esibVCOQVnN"
-      crossorigin="
-      anonymous"
-    />
+    <link rel="stylesheet" href="static/styles/fontawesome/css/all.min.css" />
     <style>
       * {
         box-sizing: border-box;
