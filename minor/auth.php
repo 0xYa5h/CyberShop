@@ -28,6 +28,21 @@
             echo "<script>window.open('login_registration','_self')</script>" ;           
         }
 
+
+
+
+
+
+      #  function giveUsername(){
+       #     global $username;
+        #    switch(True){
+         #       case(True):
+          #      return $username;
+           # }
+
+
+
+        #}
     
 
 ?>  

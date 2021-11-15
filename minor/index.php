@@ -1,5 +1,6 @@
 <?php
 include("functions.php");
+
 ?>
 
 <!DOCTYPE html>
@@ -26,6 +27,7 @@ include("functions.php");
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    
     <div class="header">
       <div class="container">
         <div class="navbar">
@@ -80,7 +82,7 @@ include("functions.php");
               />
             </svg>
           </div>
-
+          
           <nav>
             <ul id="Menu-Items">
               <li><a href="index">Home</a></li>

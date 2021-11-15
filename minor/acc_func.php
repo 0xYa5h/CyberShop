@@ -35,19 +35,19 @@ function getUser(){
             <div class='column right'>
             <form class='form' method='post' action='acc.php'>
             <br />
-            <input value='$username' type='text' name='username' required placeholder='Username' />
+            <input value='$username'  name='username' readonly />
             <input value='$f_name' type='text' name='fname' required placeholder='First Name' />
             <input value='$l_name' type='text' name='lname' required placeholder='Last Name' />
             <br />
             <br />
-            <input value='$email' type='text' name='email' required placeholder='Email' />
+            <input value='$email'  name='email'  readonly/>
             <br />
             <br />
             <input value='$contact' type='text' name='contact' required placeholder='Contact' />
             <br />
             <br />
-            <input value='$address' type='text' name='address' required placeholder='Address' />
             <input value='$pincode' type='text' name='pincode' required placeholder='Pin Code' />
+            <input  type='text' name='address' required placeholder='Address' value='$address'/>
             <button type='submit' class='btn'>Update</button>
              </form>
           </div>
