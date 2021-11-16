@@ -51,12 +51,13 @@
               >
             </div>
             <div class="otp">
-              <form data-autosubmit="false" autocomplete="off" class="digit">
+              <form data-autosubmit="false" autocomplete="off" class="digit" action="password_reset_page">
                 <input
                   type="text"
                   maxlength="3"
                   oninput="this.value=this.value.replace(/[^0-9]/g,'');"
                   name="digit-1"
+                  required placeholder="XXX"
                 />
                 <!-- <input
                   type="text"
@@ -70,8 +71,9 @@
                   oninput="this.value=this.value.replace(/[^0-9]/g,'');"
                   name="digit-3"
                 /> -->
+                <button type="submit" class="btn">Submit</button>
               </form>
-              <button type="submit" class="btn">Submit</button>
+              
             </div>
           </div>
         </div>
