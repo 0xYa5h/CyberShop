@@ -2,6 +2,8 @@
 
 $db = mysqli_connect("localhost","root","","cybershop");
 
+  
+
 //for getting user IP start
 function getUserIP(){
   switch (true) {
@@ -69,5 +71,7 @@ function getPro(){
 
 
 }
+
+
 
 ?>

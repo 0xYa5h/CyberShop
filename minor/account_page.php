@@ -99,15 +99,10 @@ include('acc_func.php');
       </div>
       <h1><b>MY ACCOUNT</b></h1>
 
-      <nav>
-        <ul id="Menu-Items">
-          <li><a href="index">Home</a></li>
-          <li><a href="products">Products</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Contact</a></li>
-          <li><a href="account_page?u_id=3">Account</a></li>
-        </ul>
-      </nav>
+      <?php
+          giveuser();        
+
+          ?>
       <a href="cart"
         ><svg
           xmlns="http://www.w3.org/2000/svg"

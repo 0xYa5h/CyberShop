@@ -1,6 +1,6 @@
 <?php
 include("functions.php");
-
+include("acc_func.php");
 ?>
 
 <!DOCTYPE html>
@@ -82,16 +82,13 @@ include("functions.php");
               />
             </svg>
           </div>
+
+          <?php
+          giveuser();
           
-          <nav>
-            <ul id="Menu-Items">
-              <li><a href="index">Home</a></li>
-              <li><a href="products-1">Products</a></li>
-              <li><a href="">About</a></li>
-              <li><a href="">Contact</a></li>
-              <li><a href="account_page?u_id=3">Account</a></li>
-            </ul>
-          </nav>
+
+          ?>
+          
           <a href="cart.html"
             ><svg
               xmlns="http://www.w3.org/2000/svg"

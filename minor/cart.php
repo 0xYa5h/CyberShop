@@ -1,3 +1,8 @@
+<?php
+include("acc_func.php");
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -33,14 +38,11 @@
           <img src="images\logo1.jpg" width="125px" />
         </div>
 
-        <nav>
-          <ul id="Menu-Items">
-            <li><a href="index">Home</a></li>
-            <li><a href="products-1">Products</a></li>
-            <li><a href="">Contact</a></li>
-            <li><a href="account_page?u_id=3">Account</a></li>
-          </ul>
-        </nav>
+        <?php
+          giveuser();
+          
+
+          ?>
         <i class="fas fa-shopping-cart"></i>
         <img src="images\menu.png" class="menu-icon" onclick="menutoggle()" />
       </div>

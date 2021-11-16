@@ -5,12 +5,12 @@ $db = mysqli_connect("localhost","root","","cybershop");
 
 function getUser(){
         global $db;
-        if (isset($_GET['u_id'])){
-            $u_id=$_GET['u_id'];
-            $get_userInfo="select * from users where u_id='$u_id'";
+        if (isset($_GET['usr'])){
+            $username=$_GET['usr'];
+            $get_userInfo="select * from users where username='$username'";
             $userInfo=mysqli_query($db,$get_userInfo);
             $row_product=mysqli_fetch_array($userInfo);
-            $username=$row_product['username'];
+            $u_id=$row_product['u_id'];
             $email=$row_product['email']; 
             $f_name=$row_product['first_name'];
             $l_name=$row_product['last_name'];
@@ -54,11 +54,38 @@ function getUser(){
           </div>
           </div>
             ";
+        
             
 
 
         }  
-    }  
+    } 
+    
+    function user(){
+        if(True){
+            return 'yk03';
+        }
+    }
+
+
+
+    function giveuser(){
+        $username=user();
+        echo " 
+                <nav>
+                  <ul id='Menu-Items'>
+                    <li><a href='index'>Home</a></li>
+                    <li><a href='products-1'>Products</a></li>
+                    <li><a href=''>About</a></li>
+                    <li><a href=''>Contact</a></li>
+                    <li><a href='account_page?usr=$username'>Account</a></li>
+                  </ul>
+                </nav> ";
+
+    
+}
+            
+            
     
        
     
