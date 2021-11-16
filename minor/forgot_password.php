@@ -48,7 +48,7 @@
               <h2><b>Forgot Password</b></h2>
 
               <div class="forgotPassword">
-                <form action="reset.php" method="get">
+                <form action="reset" method="get">
                   <input
                     type="text"
                     name="email"

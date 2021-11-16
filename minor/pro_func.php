@@ -33,7 +33,7 @@ function addCart(){
       $query="insert into cart(p_id,ip_add,qty) values('$p_id','$ip_add','$product_qty')";
       $run_query=mysqli_query($db,$query);
       echo "<script>alert('Product Successfully Added')</script>";
-      echo "<script>window.open('product_details.php?pro_id=$p_id','_self')</script>";
+      echo "<script>window.open('cart.php?pro_id=$p_id','_self')</script>";
     }
   }
 }

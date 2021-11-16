@@ -1,5 +1,6 @@
 <?php
 include("acc_func.php");
+include("cart_func.php");
 
 ?>
 
@@ -49,82 +50,13 @@ include("acc_func.php");
     </div>
 
     <!-- Cart Item Details -->
-    <div class="small-container cart-page">
-      <table class="table" style="width: 100%">
-        <tr>
-          <th>Product</th>
-          <th>Quantity</th>
-          <th>Subtotal</th>
-        </tr>
-        <tr>
-          <td>
-            <div class="cart-info">
-              <img src="images\buy-1.jpg" />
-              <div>
-                <p>Red Printed T-Shirt</p>
-                <small>Price: $50.00</small>
-                <br />
-                <a>Remove</a>
-              </div>
-            </div>
-          </td>
-          <td><input type="number" value="1" /></td>
-          <td>$100.00</td>
-        </tr>
-        <tr>
-          <td>
-            <div class="cart-info">
-              <img src="images\buy-2.jpg" />
-              <div>
-                <p>Red Printed T-Shirt</p>
-                <small>Price: $50.00</small>
-                <br />
-                <a>Remove</a>
-              </div>
-            </div>
-          </td>
-          <td><input type="number" value="1" /></td>
-          <td>$100.00</td>
-        </tr>
-        <tr>
-          <td>
-            <div class="cart-info">
-              <img src="images\buy-3.jpg" />
-              <div>
-                <p>Red Printed T-Shirt</p>
-                <small>Price: $50.00</small>
-                <br />
-                <a>Remove</a>
-              </div>
-            </div>
-          </td>
-          <td><input type="number" value="1" /></td>
-          <td>$100.00</td>
-        </tr>
-      </table>
+      <?php
 
-      <div class="total-price">
-        <table>
-          <tr>
-            <td>Subtotal</td>
-            <td>$200.00</td>
-          </tr>
-          <tr>
-            <td>Tax</td>
-            <td>$30.00</td>
-          </tr>
-          <tr>
-            <td>Total</td>
-            <td>$230.00</td>
-          </tr>
-        </table>
-      </div>
-      <div class="button">
-        <a href="order.html"
-          ><button type="submit" class="btn">Place Order</button></a
-        >
-      </div>
-    </div>
+      cartDisplay();
+      ?>
+
+
+    
     <!-- Footer section -->
     <div class="footer">
       <div class="container">

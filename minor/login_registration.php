@@ -34,7 +34,7 @@
           <ul id="Menu-Items">
             <li><a href="index">Home</a></li>
             <li><a href="products-1">Products</a></li>
-            <li><a href="">About</a></li>
+            <li><a href="about">About</a></li>
             <li><a href="">Contact</a></li>
             <li><a href="account_page">Account</a></li>
           </ul>

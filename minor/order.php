@@ -1,3 +1,9 @@
+<?php
+include("ord_func.php");
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -77,6 +83,9 @@
         ><button type="submit" class="btn">Shop More</button></a
       >
     </div>
+    <?php
+    deleteCart();
+    ?>
     <!-- Footer section -->
     <div class="footer">
       <div class="container">
