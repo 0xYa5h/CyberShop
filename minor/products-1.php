@@ -114,8 +114,8 @@ include("acc_func.php");
     ?>
       
       <div class="page-btn">
-      <a href='products-1' class="page-btn"><strong>1</strong>, </a>
-         <a href='products-2' class="page-btn"><strong>2</strong></a>
+      <span><a href='products-1' class="page-btn">1</a></span>
+      <span><a href='products-2' class="page-btn"><strong>2</strong></a></span>
         <!--<span>&#8594;</span> -->
       </div>
     </div>
