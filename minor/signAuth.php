@@ -13,7 +13,8 @@
         $result = mysqli_query($con, $sql);  
         $_SESSION['username'] = $username;
         echo "<script>alert('$username successfully created')</script>";
-        echo "<script>window.open('login_registration')</script>";
+        #echo "<script>window.open('login_registration')</script>";
+        header("location: login_registration ");
     }
     else{
         echo "<script>alert('Registration failed!! Password does not match!!!')</script>";

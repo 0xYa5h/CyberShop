@@ -1,6 +1,5 @@
 <?php
-$db = mysqli_connect("localhost","root","","cybershop");
-            
+$db = mysqli_connect("localhost","root","","cybershop");          
             
 
 
@@ -19,7 +18,7 @@ $db = mysqli_connect("localhost","root","","cybershop");
         $result = mysqli_query($db, $sql); 
         echo "<script>alert('Information Upated!!!')</script>";
 
-        echo "<script>window.open('account_page.php?=u_id=$u_id','_self')</script>"
+        echo "<script>window.open('login_registration','_self')</script>"
 
     
 

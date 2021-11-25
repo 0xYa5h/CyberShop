@@ -9,15 +9,12 @@
         $count = mysqli_num_rows($result);  
          
         if($count >= 1){  
-            if($username=='admin'){
-                echo "<script>alert('You have logged in as $username')</script>";
-                echo "<script>window.open('insert_product','_self')</script>" ;
-            }
-            else{
+            
                 $_SESSION['uname'] = $username;
                 echo "<script>alert('You have logged in as $username')</script>";
-                echo "<script>window.open('account_page.php?usr=$username','_self')</script>" ; 
-            }
+                #echo "<script>window.open('account_page.php?usr=$username','_self')</script>" ;
+                header("location:account_page.php?usr=$username") ;
+            
                            
              
         }  

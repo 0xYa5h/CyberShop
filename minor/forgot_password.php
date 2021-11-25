@@ -53,7 +53,7 @@
                     type="text"
                     name="email"
                     required
-                    placeholder="Enter Username"
+                    placeholder="Enter Mail"
                   />
 
                   <button type="submit" class="btn">Submit</button>

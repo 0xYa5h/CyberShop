@@ -51,9 +51,10 @@
               >
             </div>
             <div class="otp">
-              <form data-autosubmit="false" autocomplete="off" class="digit" action="password_reset_page">
+              <form data-autosubmit="false" autocomplete="off" class="digit" action="otp_verify" method="post">
                 <input
                   type="text"
+                  class="otp"
                   maxlength="3"
                   oninput="this.value=this.value.replace(/[^0-9]/g,'');"
                   name="digit-1"
